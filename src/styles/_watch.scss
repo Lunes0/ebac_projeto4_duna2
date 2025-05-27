@@ -1,0 +1,16 @@
+.watch {
+    &__list {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        li {
+            img {
+                width: 40px;
+                margin: 15px;
+            }
+        }
+    }
+}

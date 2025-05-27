@@ -1,3 +1,26 @@
-body {
-    background-image: url(../images/duna_2_background.jpg);
+@use "variaveis";
+
+.hero {
+    background-image: url(../images/duna_2_background1.webp);
+    background-size: cover;
+    min-height: 80vh;
+    text-align: center;
+    background-size: cover;
+
+    &__branding{
+        display: block;
+        padding-top: 200px;
+        max-width: 720px;
+
+        img {
+            margin-bottom: 100px;
+            margin-left: 17vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        a {
+            padding: 20px 40px;
+        }
+    }
 }
