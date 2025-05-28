@@ -7,20 +7,59 @@
     text-align: center;
     background-size: cover;
 
+    @media (max-width: 1024px) {
+        background-image: url(../images/duna_2_background-small.jpg);
+    }
+    @media (max-width: 768px) {
+        background-image: url(../images/duna_2_background-small.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
     &__branding{
         display: block;
         padding-top: 200px;
-        max-width: 720px;
+        padding-left: 100px;
+        max-width: 600px;
 
         img {
             margin-bottom: 100px;
-            margin-left: 17vh;
             display: flex;
             flex-direction: column;
+            margin: 0 auto 60px;
+            margin-left: 40px;
         }
 
         a {
             padding: 20px 40px;
+        }
+        @media (max-width: 1024px) {
+            max-width: 500px;
+            padding-top: 100px;
+            padding-left: 0;
+            img {
+                object-fit: contain;
+                height: 80px;
+                margin-left: 60px;
+            }
+
+            a {
+                padding: 20px 40px;
+            }
+        }
+        @media (max-width: 768px) {
+            max-width: 100%;
+            padding-top: 100px;
+            padding-left: 0;
+            img {
+                object-fit: contain;
+                height: 60px;
+                margin-left: 80px;
+            }
+
+            a {
+                padding: 20px 40px;
+            }
         }
     }
 }
